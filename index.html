@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="list">
+
+</div>
+<script>
+
+    var user = {
+        name: 'Me',
+        foo: function () {
+            console.log('Hi ' + this.name);
+        }
+    };
+
+
+    function foo() {
+        console.log(this);
+    }
+
+    user.foo = foo;
+
+    user.foo();
+
+</script>
+</body>
+</html>
